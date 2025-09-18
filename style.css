@@ -1,0 +1,192 @@
+/******* GENERAL *******/
+/* spacing on all sections */
+#about,
+#skills,
+#portfolio,
+#contact {
+    margin-top: 4rem;
+    /*padding-top: 4rem;*/
+}
+
+#about h2,
+#skills h2,
+#portfolio h2,
+#contact h2 {
+    margin-bottom: 3rem;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+/* display background dark color on navbar scroll */
+.navbarScroll.navbar-dark {
+    background-color: #002740;
+}
+
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    max-height: 900px;
+    background: url("images/fond-de-grille-numerique-futuriste-bleu-fonce-abstrait.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+
+}
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+}
+
+.hero_desc {
+    font-size: 2rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: rgba(0, 39, 64, 0.3);
+    display: inline-block;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* about */
+
+.imageAboutPage {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+
+}
+
+/* skills */
+.skillsText.card {
+    height: 350px;
+    cursor: pointer;
+}
+
+.skillsText img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+#skills p {
+    text-align: center;
+}
+
+.skillsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+/*.card:hover .skillsIcon {
+    color: #008000;
+}
+
+.skillsText:hover {
+    border: 1px solid #008000;
+
+}*/
+
+
+/* portfolio */
+#portfolio p {
+    text-align: center;
+}
+
+.card-img-top {
+    height: 164px;
+    object-fit: cover;
+}
+
+#portfolio .btn-success {
+    background-color: #002740;
+    border-color: #002740;
+    padding: 6px 20px;
+    letter-spacing: 2px;
+}
+
+#portfolio .btn-success:hover {
+    border-color: #002740;
+    background-color: #004362;
+
+}
+
+/* contact */
+.contactColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactColumn i {
+    color: hwb(199 16% 20%);
+}
+
+/* footer */
+
+#contact {
+    background-color: #002740;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+    /* optionnel : effet de profondeur */
+}
+
+#contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 2.2rem;
+    }
+
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .hero_title {
+        font-size: 1.8rem;
+        max-width: 90%;
+    }
+
+    .hero_desc {
+        font-size: 1rem;
+        max-width: 95%;
+    }
+}
