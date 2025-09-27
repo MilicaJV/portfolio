@@ -85,6 +85,10 @@ h3 {
 
 }
 
+.about p {
+    padding-top: 15px;
+}
+
 /* skills */
 .skillsText.card {
     height: 350px;
@@ -179,6 +183,10 @@ h3 {
 
     .hero_desc {
         font-size: 1.2rem;
+    }
+
+    .imageAboutPage {
+        width: auto;
     }
 }
 
